@@ -8,6 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 // import org.openqa.selenium.support.ui.ExpectedConditions;
 // import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Register {
     RemoteWebDriver driver;
@@ -43,6 +48,10 @@ public class Register {
         // Type the generated username in the username field
         username_txt_box.sendKeys(test_data_username);
         Thread.sleep(3000);
+        test_data_username = Username;
+
+        // Type the generated username in the username field
+        username_txt_box.sendKeys(test_data_username);
 
         // Find the password Text Box
         WebElement password_txt_box = this.driver.findElement(By.id("password"));
