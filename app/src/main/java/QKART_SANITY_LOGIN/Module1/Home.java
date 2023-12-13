@@ -48,6 +48,10 @@ public class Home {
             // TODO: CRIO_TASK_MODULE_TEST_AUTOMATION - TEST CASE 03: MILESTONE 1
             // Clear the contents of the search box and Enter the product name in the search
             // box
+            WebElement searchBox = driver.findElement(By.xpath("(//input[@name='search'])[1]"));
+            searchBox.clear();
+            searchBox.sendKeys(product);
+            Thread.sleep(3000);
             return true;
         } catch (Exception e) {
             System.out.println("Error while searching for a product: " + e.getMessage());
@@ -82,6 +86,14 @@ public class Home {
             // TODO: CRIO_TASK_MODULE_TEST_AUTOMATION - TEST CASE 03: MILESTONE 1
             // Check the presence of "No products found" text in the web page. Assign status
             // = true if the element is *displayed* else set status = false
+            WebElement noProductsFound = driver.findElement(By.xpath("//h4[text()=' No products found ']"));
+            if(noProductsFound.isDisplayed()){
+                String actualText = noProductsFound.getText();
+                if(actualText.equals(" No products found ")){
+                status = true;
+                }
+
+            }
             return status;
         } catch (Exception e) {
             return status;
