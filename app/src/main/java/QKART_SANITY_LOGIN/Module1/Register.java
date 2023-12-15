@@ -48,10 +48,10 @@ public class Register {
         // Type the generated username in the username field
         username_txt_box.sendKeys(test_data_username);
         Thread.sleep(3000);
-        test_data_username = Username;
+        // test_data_username = Username;
 
         // Type the generated username in the username field
-        username_txt_box.sendKeys(test_data_username);
+        // username_txt_box.sendKeys(test_data_username);
 
         // Find the password Text Box
         WebElement password_txt_box = this.driver.findElement(By.id("password"));

@@ -349,12 +349,35 @@ public class QkartSanity {
         // TODO: CRIO_TASK_MODULE_TEST_AUTOMATION - TEST CASE 06: MILESTONE 5
 
         // TODO: Register a new user
+        registration.navigateToRegisterPage();
+
+        // Register a new user
+        status = registration.registerUser("testUser", "abc@123", true);
+        if (!status) {
+            logStatus("TestCase 6", "Test Case Failure. Happy Flow Test Failed", "FAIL");
+        }
+
+        // Save the username of the newly registered user
+        lastGeneratedUserName = registration.lastGeneratedUsername;
 
         // TODO: Login using the newly registed user
+        login.navigateToLoginPage();
+
+        // Login with the newly registered user's credentials
+        status = login.PerformLogin(lastGeneratedUserName, "abc@123");
+        if (!status) {
+            logStatus("Step Failure", "User Perform Login Failed", status ? "PASS" : "FAIL");
+            logStatus("End TestCase", "Test Case 6: Happy Flow Test Failed : ", status ? "PASS" : "FAIL");
+        }
+
 
         // TODO: Add "Xtend Smart Watch" to cart
+        status = homePage.searchForProduct("Xtend");
+        homePage.addProductToCart("Xtend Smart Watch");
 
         // TODO: Add "Yarine Floor Lamp" to cart
+        status = homePage.searchForProduct("Yarine");
+        homePage.addProductToCart("Yarine Floor Lamp");
 
         // update watch quantity to 2
         homePage.changeProductQuantityinCart("Xtend Smart Watch", 2);
@@ -477,7 +500,7 @@ public class QkartSanity {
             }
 
             System.out.println("");
-            // Execute Test Case 4
+            // // Execute Test Case 4
             totalTests += 1;
             status = TestCase04(driver);
             if (status) {
@@ -485,7 +508,7 @@ public class QkartSanity {
             }
 
             System.out.println("");
-            // Execute Test Case 5
+            // // Execute Test Case 5
             totalTests += 1;
             status = TestCase05(driver);
             if (status) {
@@ -501,7 +524,7 @@ public class QkartSanity {
             }
 
             System.out.println("");
-            // Execute Test Case 7
+            // // Execute Test Case 7
             totalTests += 1;
             status = TestCase07(driver);
             if (status) {
