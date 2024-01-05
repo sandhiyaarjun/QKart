@@ -44,7 +44,6 @@ public class SearchResult {
            sizeChartButton.click();
            Thread.sleep(1000);
            return true;
-            // return true;
         } catch (Exception e) {
             System.out.println("Exception while opening Size chart: " + e.getMessage());
             return false;
@@ -142,7 +141,6 @@ public class SearchResult {
             }
 
            return status;
-            // return status;
 
         } catch (Exception e) {
             System.out.println("Error while validating chart contents");

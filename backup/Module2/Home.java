@@ -29,7 +29,6 @@ public class Home {
             WebElement logout_button = driver.findElement(By.className("MuiButton-text"));
             logout_button.click();
 
-            // SLEEP_STMT_10: Wait for Logout to complete
             // Wait for Logout to Complete
             Thread.sleep(3000);
 
@@ -148,8 +147,6 @@ public class Home {
             }
 
         }
-            // System.out.println("Unable to find the given product");
-            // return true;
             System.out.println("Unable to find the given product");
             return true;
         } catch (Exception e) {
@@ -228,10 +225,11 @@ public class Home {
             List<WebElement> cartItems =
             driver.findElements(By.xpath("//div[@class='MuiBox-root css-1gjj37g']"));
 
-     for (WebElement item : cartItems) {
+    for (WebElement item : cartItems) {
         WebElement parentElement = item;
-        String productTitle = item.findElement(By.xpath("//div[@class='MuiBox-root css-1gjj37g']/div[1]"))
-          .getText();
+        String productTitle =
+                item.findElement(By.xpath("//div[@class='MuiBox-root css-1gjj37g']/div[1]"))
+                        .getText();
         String quantityString = item
                 .findElement(By
                         .xpath("//div[@class='MuiBox-root css-1gjj37g']/div[2]/div[1]/div"))
@@ -269,11 +267,6 @@ public class Home {
     }
 
             
-
-
-            // return true;
-
-
 
 
             return true;

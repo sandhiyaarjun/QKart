@@ -56,7 +56,6 @@ public class Checkout {
 
 
             return true;
-            // return false;
         } catch (Exception e) {
             System.out.println("Exception occurred while entering address: " + e.getMessage());
             return false;
@@ -121,7 +120,6 @@ public class Checkout {
 
 
             return true;
-            // return false;
 
         } catch (Exception e) {
             System.out.println("Exception while clicking on PLACE ORDER: " + e.getMessage());
@@ -152,8 +150,7 @@ public class Checkout {
     }
 
 
-            // return true;
-            return false;
+            return true;
         } catch (Exception e) {
             System.out.println("Exception while verifying insufficient balance message: " + e.getMessage());
             return false;
