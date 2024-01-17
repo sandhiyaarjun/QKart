@@ -84,7 +84,7 @@ public class SearchResult {
              * the element is "SIZE CHART". If the text "SIZE CHART" matches for the
              * element, set status = true , else set to false
              */
-            WebElement element = parentElement.findElement(By.tagName("button"));
+            WebElement element = parentElement.findElement(By.xpath("//button[text()='Size chart']"));
             status = element.getText().equals("SIZE CHART");
 
             return status;
@@ -159,7 +159,7 @@ public class SearchResult {
         Boolean status = false;
         try {
             // If the size dropdown exists and is displayed return true, else return false
-            WebElement element = driver.findElement(By.className("css-13sljp9"));
+            WebElement element = driver.findElement(By.xpath("//select[@name='age']"));
             status = element.isDisplayed();
             return status;
         } catch (Exception e) {
