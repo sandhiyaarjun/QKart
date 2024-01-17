@@ -52,8 +52,8 @@ public class Home {
             searchBox.sendKeys(product);
             // TODO: CRIO_TASK_MODULE_XPATH - M0 Fix broken Xpath
             WebDriverWait wait = new WebDriverWait(driver,30);
-            wait.until(ExpectedConditions.or(ExpectedConditions.textToBePresentInElementLocated(By.className("css-yg30e6"), product),
-            ExpectedConditions.presenceOfElementLocated(By.xpath("//h4[text()=' No products found ']"))));
+            wait.until(ExpectedConditions.or(ExpectedConditions.textToBePresentInElementLocated(By.className("css-yg30ev6"), product),
+            ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='MuiCardContent-root css-1qw96cp']/p"))));
             Thread.sleep(3000);
             return true;
         }
