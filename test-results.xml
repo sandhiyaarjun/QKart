@@ -1,21 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-25T15:03:00 IST" name="Gradle suite" finished-at="2024-01-25T15:03:10 IST" duration-ms="9435">
+  <suite started-at="2024-01-30T15:14:01 IST" name="Gradle suite" finished-at="2024-01-30T15:18:22 IST" duration-ms="261729">
     <groups>
     </groups>
-    <test started-at="2024-01-25T15:03:00 IST" name="Gradle test" finished-at="2024-01-25T15:03:10 IST" duration-ms="9435">
+    <test started-at="2024-01-30T15:14:01 IST" name="Gradle test" finished-at="2024-01-30T15:18:22 IST" duration-ms="261729">
       <class name="QKART_TESTNG.QKART_Tests">
-        <test-method is-config="true" signature="createDriver()[pri:0, instance:QKART_TESTNG.QKART_Tests@4f741f58]" started-at="2024-01-25T15:02:58 IST" name="createDriver" finished-at="2024-01-25T15:03:00 IST" duration-ms="2018" status="PASS">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:13:58 IST" name="createDriver" finished-at="2024-01-30T15:14:01 IST" duration-ms="2275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method signature="TestCase01()[pri:0, instance:QKART_TESTNG.QKART_Tests@4f741f58]" started-at="2024-01-25T15:03:00 IST" name="TestCase01" finished-at="2024-01-25T15:03:10 IST" duration-ms="9345" status="PASS">
+        <test-method signature="TestCase01()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:14:01 IST" name="TestCase01" finished-at="2024-01-30T15:14:13 IST" duration-ms="12503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase01 -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:QKART_TESTNG.QKART_Tests@4f741f58]" started-at="2024-01-25T15:03:10 IST" name="quitDriver" finished-at="2024-01-25T15:03:10 IST" duration-ms="128" status="PASS">
+        <test-method signature="TestCase02()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:14:13 IST" name="TestCase02" finished-at="2024-01-30T15:14:51 IST" duration-ms="37741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase02 -->
+        <test-method signature="TestCase03()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:14:51 IST" name="TestCase03" finished-at="2024-01-30T15:15:26 IST" duration-ms="34864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase03 -->
+        <test-method signature="TestCase04()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:15:26 IST" name="TestCase04" finished-at="2024-01-30T15:15:44 IST" duration-ms="18547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase04 -->
+        <test-method signature="TestCase05()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:15:44 IST" name="TestCase05" finished-at="2024-01-30T15:16:10 IST" duration-ms="25714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase05 -->
+        <test-method signature="TestCase06()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:16:10 IST" name="TestCase06" finished-at="2024-01-30T15:16:41 IST" duration-ms="30832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase06 -->
+        <test-method signature="TestCase07()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:16:41 IST" name="TestCase07" finished-at="2024-01-30T15:17:30 IST" duration-ms="49438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase07 -->
+        <test-method signature="TestCase08()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:17:30 IST" name="TestCase08" finished-at="2024-01-30T15:17:46 IST" duration-ms="15269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase08 -->
+        <test-method signature="TestCase09()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:17:46 IST" name="TestCase09" finished-at="2024-01-30T15:17:54 IST" duration-ms="8701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase09 -->
+        <test-method signature="TestCase10()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:17:54 IST" name="TestCase10" finished-at="2024-01-30T15:17:57 IST" duration-ms="2285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase10 -->
+        <test-method signature="TestCase11()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:17:57 IST" name="TestCase11" finished-at="2024-01-30T15:18:22 IST" duration-ms="25702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase11 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:QKART_TESTNG.QKART_Tests@40ee4a48]" started-at="2024-01-30T15:18:22 IST" name="quitDriver" finished-at="2024-01-30T15:18:23 IST" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
